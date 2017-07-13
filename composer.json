@@ -1,0 +1,7 @@
+{
+    "name": "vagrant/public",
+    "require": {
+        "phpmailer/phpmailer": "^5.2"
+    },
+    "license": "UNLICENCED"
+}
