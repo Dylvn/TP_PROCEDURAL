@@ -37,12 +37,12 @@ $mail = new PHPMailer;
 $mail->isSMTP();                                   // Set mailer to use SMTP
 $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'trochain148@gmail.com';                 // SMTP username
-$mail->Password = '7e7LmXz7fCM4';                           // SMTP password
+$mail->Username = 'test@gmail.com';                 // SMTP username
+$mail->Password = '';                           // SMTP password
 $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 587;                                    // TCP port to connect to
 
-$mail->setFrom('trochain148@gmail.com', 'Mailer');
+$mail->setFrom('test@gmail.com', 'Mailer');
 $mail->addAddress( $email, $_SESSION['login'] );     // Add a recipient
 
 $mail->isHTML(true);                                  // Set email format to HTML
